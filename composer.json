@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "unglue/client": "^1.0"
+    }
+}

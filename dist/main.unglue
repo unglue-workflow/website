@@ -1,0 +1,10 @@
+{
+    "css": [
+        "../src/scss/main.scss"
+    ],
+    "svg": [
+        "../src/icons/angle-down.svg",
+        "../src/icons/book.svg",
+        "../src/icons/github.svg"
+    ]
+}

@@ -1,0 +1,61 @@
+.codebox {
+    background-color: #303030;
+    border-radius: 10px 0 0 10px;
+    color: $white;
+    padding: 15px;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        padding: 30px;
+    }
+
+    &::after {
+        background-color: #303030;
+        bottom: 0;
+        content: '';
+        left: 100%;
+        position: absolute;
+        top: 0;
+        width: 800px;
+    }
+}
+
+.codebox__line {
+    color: $white;
+    line-height: 1.3;
+    margin: 0;
+    position: relative;
+
+    .codebox--shell & {
+        color: rgba(255, 255, 255, .7);
+        padding-left: 30px;
+
+        & + .codebox__line {
+            margin-top: 8px;
+
+            @include media-breakpoint-up(xl) {
+                margin-top: 4px;
+            }
+        }
+
+        &--input {
+            color: $white;
+
+            &::before {
+                color: #68c82d;
+                content: '>$';
+                left: 0;
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+    &--unimportant {
+        color: rgba(255, 255, 255, .2);
+    }
+    @for $i from 1 to 5 {
+        &--t#{$i} {
+            padding-left: ($i - 1) * 30px;
+        }
+    }
+}
