@@ -17,6 +17,7 @@
 // Base
 // ==================================================
 
+@import 'base/a';
 @import 'base/body';
 
 // ==================================================
@@ -24,8 +25,10 @@
 // ==================================================
 
 @import 'components/codebox';
+@import 'components/footer';
 @import 'components/hero';
 @import 'components/highlight';
+@import 'components/info';
 @import 'components/section';
 @import 'components/symbol';
 @import 'components/teaser';

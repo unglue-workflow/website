@@ -1,19 +1,33 @@
 .hero {
     color: rgba(0, 0, 0, .3);
-    height: 100vh;
+    height: 400px;
+    padding: 50px 0 0;
     position: relative;
     width: 100%;
+
+    @media (min-height: 400px) {
+        height: 100vh;
+    }
+}
+
+.hero__center {
+    left: 0;
+    position: relative;
+    right: 0;
+    text-align: center;
+
+    @media (min-height: 400px) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
 }
 
 .hero__title {
     font-size: 60px;
     font-weight: 700;
-    left: 50%;
     letter-spacing: 2px;
-    position: absolute;
     text-transform: uppercase;
-    top: 50%;
-    transform: translate(-50%, -50%);
 
     @include media-breakpoint-up(sm) {
         font-size: 80px;
@@ -23,6 +37,17 @@
     }
     @include media-breakpoint-up(lg) {
         font-size: 120px;
+    }
+}
+
+.hero__slogan {
+    font-size: 20px;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 25px;
+    }
+    @include media-breakpoint-up(md) {
+        font-size: 30px;
     }
 }
 

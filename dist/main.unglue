@@ -6,5 +6,9 @@
         "../src/icons/angle-down.svg",
         "../src/icons/book.svg",
         "../src/icons/github.svg"
+    ],
+    "js": [
+        "../src/js/jQuery.js",
+        "../src/js/main.js"
     ]
 }
