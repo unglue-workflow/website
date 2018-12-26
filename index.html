@@ -99,7 +99,7 @@
 
                 <div class="row align-items-top mt-5">
                     <div class="col-sm-6 pt-2">
-                        <p>Require the Unglue client as a dev requirement.</p>
+                        <p>Add the <span class="highlight">unglue/client</span> composer package to the require-dev section in the composer.json. This will then install then the unglue binary to the vendor folder.</p>
                     </div>
                     <div class="col-sm-6">
                         <div class="codebox codebox--shell">
@@ -115,10 +115,10 @@
 
                 <div class="row align-items-top mt-4">
                     <div class="col-sm-6 pt-2">
-                        <p>Create a <span class="highlight">.unglue</span> file in the directory you want your dist files to be in. For example dist/main.unglue.</p>
+                        <p>Create an <span class="highlight">.unglue</span> file in the directory you want your dist files to be in. For example dist/main.unglue.</p>
                         
                         <p class="info">You don't have to include the <span class="highlight">options</span> key in the unglue file.<br />Default is <span class="highlight">maps false</span> and <span class="highlight">compress true</span>.</p>
-                        <p class="info">Find more informations about the unglue file <a href="https://unglue-docs.readthedocs.io/en/latest/client/#unglue-config-file" target="_blank">here</a>.</p>
+                        <p class="info">Find more informations about the unglue file <a href="https://unglue-docs.readthedocs.io/en/latest/client/#config-file" target="_blank">here</a>.</p>
                     </div>
                     <div class="col-sm-6">
                         <div class="codebox">
@@ -216,5 +216,4 @@
 
         <script type="text/javascript" src="dist/main.js"></script>
     </body>
-
 </html>
