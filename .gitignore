@@ -1,1 +1,6 @@
 vendor/
+
+# Dist files (unglue)
+dist/main.css
+dist/main.js
+dist/main.svg
