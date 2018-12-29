@@ -1,219 +1,209 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        
-        <meta name="description" content="Unglue – Frontend workflow done different. Use composer instead of node to compile your code.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-        <meta name="application-name" content="Unglue - Frontend workflow done different."/>
-        <meta name="msapplication-TileColor" content="#F56CA4" />
-        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-
-        
-        <title>Unglue - Frontend workflow done different.</title>
-        
-        <link rel="stylesheet" href="dist/main.css">
-        
-        <script type="text/javascript">
-        var _mtm = _mtm || [];
-        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://piwik.luya.io/js/container_PlsyJKVe.js'; s.parentNode.insertBefore(g,s);
-        </script>
-
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-        <div class="hero">
-            <div class="container">
-                <div class="hero__center">
-                    <h1 class="hero__title">Unglue</h1>
-                    <p class="hero__slogan">Frontend workflow done different.</p>
-                </div>
+<head>
+    <title>Unglue - Frontend workflow done different.</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Unglue – Frontend workflow done different. Use composer instead of node to compile your code.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Unglue - Frontend workflow done different.">
+    <meta name="description" content="Forget the hassle of installing Node on your local system just to compile some code.">
+    <meta name="og:description" content="Forget the hassle of installing Node on your local system just to compile some code.">
+    <meta name="application-name" content="Unglue - Frontend workflow done different."/>
+    <meta name="msapplication-TileColor" content="#F56CA4" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="dist/main.css">
+    <script type="text/javascript">
+    var _mtm = _mtm || [];
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://piwik.luya.io/js/container_PlsyJKVe.js'; s.parentNode.insertBefore(g,s);
+    </script>
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <div class="hero">
+        <div class="container">
+            <div class="hero__center">
+                <h1 class="hero__title">Unglue</h1>
+                <p class="hero__slogan">Frontend workflow done different.</p>
             </div>
-            <a class="hero__read-more" href="#quick-look">
-                <p class="hero__read-more-label">Read more</p>
-                <div class="hero__read-more-icon">
-                    <svg class="symbol symbol--angle-down"><use class="symbol__use" xlink:href="dist/main.svg#angle-down" /></svg>
-                </div>
-            </a>
         </div>
-
-        <div class="anchor" id="quick-look"></div>
-        <div class="section section--quick-look">
-
-            <div class="container">
-
-                <div class="row align-items-top">
-                    <div class="col-sm-6 pt-4">
-                        <p>Wouldn’t it be nice to just run composer install and be ready to work right away? We think it would. That’s why we created Unglue – to help you get out of the sticky mess of local node and javascript compiling.</p>
-                        <p>Forget the hassle of installing Node on your local system just to compile some code.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="codebox codebox--shell">
-                            <p class="codebox__line codebox__line--input">composer install</p>
-                            <p class="codebox__line codebox__line--unimportant">... installing vendor ...</p>
-                            <br />
-                            <p class="codebox__line codebox__line--input">./vendor/bin/unglue compile</p>
-                            <p class="codebox__line">test.unglue: load and test (/var/www/example.unglue)</p>
-                            <p class="codebox__line">test.unglue [css] Collecting data [=======] 100% (1/1)</p>
-                            <p class="codebox__line">test.unglue [css] Send API request</p>
-                            <p class="codebox__line codebox__line--green">test.unglue [css] Compiling done in 0.16s</p>
-                            <div class="codebox__dots">
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <a class="hero__read-more" href="#quick-look">
+            <p class="hero__read-more-label">Read more</p>
+            <div class="hero__read-more-icon">
+                <svg class="symbol symbol--angle-down"><use class="symbol__use" xlink:href="dist/main.svg#angle-down" /></svg>
             </div>
+        </a>
+    </div>
 
-        </div>
+    <div class="anchor" id="quick-look"></div>
+    <div class="section section--quick-look">
 
-        <div class="anchor" id="step-by-step"></div>
-        <div class="section section--step-by-step">
+        <div class="container">
 
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-sm">
-                        <h1>Add Unglue to your Project</h1>
-                    </div>
+            <div class="row align-items-top">
+                <div class="col-sm-6 pt-4">
+                    <p>Wouldn’t it be nice to just run composer install and be ready to work right away? We think it would. That’s why we created Unglue – to help you get out of the sticky mess of local node and javascript compiling.</p>
+                    <p>Forget the hassle of installing Node on your local system just to compile some code.</p>
                 </div>
-
-                <div class="row align-items-top mt-5">
-                    <div class="col-sm-6 pt-2">
-                        <p>Add the <span class="highlight">unglue/client</span> composer package to the require-dev section of your composer.json. This will install the unglue binary to the vendor folder.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="codebox codebox--shell">
-                            <p class="codebox__line codebox__line--input">composer require --dev unglue/client</p>
-                            <div class="codebox__dots">
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                            </div>
+                <div class="col-sm-6">
+                    <div class="codebox codebox--shell">
+                        <p class="codebox__line codebox__line--input">composer install</p>
+                        <p class="codebox__line codebox__line--unimportant">... installing vendor ...</p>
+                        <br />
+                        <p class="codebox__line codebox__line--input">./vendor/bin/unglue compile</p>
+                        <p class="codebox__line">test.unglue: load and test (/var/www/example.unglue)</p>
+                        <p class="codebox__line">test.unglue [css] Collecting data [=======] 100% (1/1)</p>
+                        <p class="codebox__line">test.unglue [css] Send API request</p>
+                        <p class="codebox__line codebox__line--green">test.unglue [css] Compiling done in 0.16s</p>
+                        <div class="codebox__dots">
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row align-items-top mt-4">
-                    <div class="col-sm-6 pt-2">
-                        <p>Create a <span class="highlight">.unglue</span> file in the directory you want your dist files to be in. For example dist/main.unglue.</p>
-                        
-                        <p class="info">You don't have to include the <span class="highlight">options</span> key in the unglue file.<br />Default is <span class="highlight">maps false</span> and <span class="highlight">compress true</span>.</p>
-                        <p class="info">Find more informations about the unglue file <a href="https://unglue-docs.readthedocs.io/en/latest/client/#config-file" target="_blank">here</a>.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="codebox">
-                            <p class="codebox__line">{</p>
-                            <p class="codebox__line codebox__line--t2">"css": [</p>
-                            <p class="codebox__line codebox__line--t3">"../src/scss/main.scss"</p>
-                            <p class="codebox__line codebox__line--t2">],</p>
-                            <p class="codebox__line codebox__line--t2">"js": [</p>
-                            <p class="codebox__line codebox__line--t3">"../src/js/main.js"</p>
-                            <p class="codebox__line codebox__line--t2">],</p>
-                            <p class="codebox__line codebox__line--t2">"options": {</p>
-                            <p class="codebox__line codebox__line--t3">"compress": true,</p>
-                            <p class="codebox__line codebox__line--t3">"maps": false</p>
-                            <p class="codebox__line codebox__line--t2">}</p>
-                            <p class="codebox__line">}</p>
-                            <div class="codebox__dots">
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row align-items-top mt-4">
-                    <div class="col-sm-6 pt-2">
-                        <p>Run the compile or watch command, depending on what you want to do.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="codebox codebox--shell">
-                            <p class="codebox__line codebox__line--input">./vendor/bin/unglue compile</p>
-                            <br />
-                            <p class="codebox__line codebox__line--input">./vendor/bin/unglue watch</p>
-                            <div class="codebox__dots">
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row align-items-top mt-4">
-                    <div class="col-sm-6 pt-2">
-                        <p>The unglue client will connect to our Server by default. If you want to connect to your own server instance you can easily do that.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="codebox codebox--shell">
-                            <p class="codebox__line codebox__line--input">./vendor/bin/unglue compile --server=address:port</p>
-                            <div class="codebox__dots">
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                                <div class="codebox__dot"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="anchor" id="learn-more"></div>
-        <div class="section section--learn-more">
-            
-            <div class="container">
-                <div class="row">
-
-                        <div class="col-sm-6">
-                            <a class="teaser" href="https://github.com/unglue-workflow/client" target="_blank">
-                                <div class="teaser__icon">
-                                    <svg class="symbol symbol--github"><use class="symbol__use" xlink:href="dist/main.svg#github" /></svg>
-                                </div>
-                                <span class="teaser__label">Star us on GitHub</span>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <a class="teaser" href="https://unglue-docs.readthedocs.io/" target="_blank">
-                                <div class="teaser__icon">
-                                    <svg class="symbol symbol--book"><use class="symbol__use" xlink:href="dist/main.svg#book" /></svg>
-                                </div>
-                                <span class="teaser__label">Read the Documenation</span>
-                            </a>
-                        </div>
-
                 </div>
             </div>
 
         </div>
 
-        <div class="footer">
-            <p>The public API is sponsored by <a href="https://zephir.ch" target="_blank">Zephir</a>.</p>
+    </div>
+
+    <div class="anchor" id="step-by-step"></div>
+    <div class="section section--step-by-step">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm">
+                    <h1>Add Unglue to your Project</h1>
+                </div>
+            </div>
+
+            <div class="row align-items-top mt-5">
+                <div class="col-sm-6 pt-2">
+                    <p>Add the <span class="highlight">unglue/client</span> composer package to the require-dev section of your composer.json. This will install the unglue binary to the vendor folder.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="codebox codebox--shell">
+                        <p class="codebox__line codebox__line--input">composer require --dev unglue/client</p>
+                        <div class="codebox__dots">
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-top mt-4">
+                <div class="col-sm-6 pt-2">
+                    <p>Create an <span class="highlight">.unglue</span> file in the directory you want your dist files to be in. For example dist/main.unglue.</p>
+                    
+                    <p class="info">You don't have to include the <span class="highlight">options</span> key in the unglue file.<br />Default is <span class="highlight">maps false</span> and <span class="highlight">compress true</span>.</p>
+                    <p class="info">Find more informations about the unglue file <a href="https://unglue-docs.readthedocs.io/en/latest/client/#config-file" target="_blank">here</a>.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="codebox">
+                        <p class="codebox__line">{</p>
+                        <p class="codebox__line codebox__line--t2">"css": [</p>
+                        <p class="codebox__line codebox__line--t3">"../src/scss/main.scss"</p>
+                        <p class="codebox__line codebox__line--t2">],</p>
+                        <p class="codebox__line codebox__line--t2">"js": [</p>
+                        <p class="codebox__line codebox__line--t3">"../src/js/main.js"</p>
+                        <p class="codebox__line codebox__line--t2">],</p>
+                        <p class="codebox__line codebox__line--t2">"options": {</p>
+                        <p class="codebox__line codebox__line--t3">"compress": true,</p>
+                        <p class="codebox__line codebox__line--t3">"maps": false</p>
+                        <p class="codebox__line codebox__line--t2">}</p>
+                        <p class="codebox__line">}</p>
+                        <div class="codebox__dots">
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-top mt-4">
+                <div class="col-sm-6 pt-2">
+                    <p>Run the watch command to compile the code on startup and whenever a file changes.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="codebox codebox--shell">
+                        <p class="codebox__line codebox__line--input">./vendor/bin/unglue watch</p>
+                        <div class="codebox__dots">
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-top mt-4">
+                <div class="col-sm-6 pt-2">
+                    <p>The unglue client will connect to our Server by default. If you want to connect to your own server instance you can easily do that.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="codebox codebox--shell">
+                        <p class="codebox__line codebox__line--input">./vendor/bin/unglue compile --server=address:port</p>
+                        <div class="codebox__dots">
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                            <div class="codebox__dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <script type="text/javascript" src="dist/main.js"></script>
-    </body>
+    </div>
+
+    <div class="anchor" id="learn-more"></div>
+    <div class="section section--learn-more">
+        
+        <div class="container">
+            <div class="row">
+
+                    <div class="col-sm-6">
+                        <a class="teaser" href="https://github.com/unglue-workflow/client" target="_blank">
+                            <div class="teaser__icon">
+                                <svg class="symbol symbol--github"><use class="symbol__use" xlink:href="dist/main.svg#github" /></svg>
+                            </div>
+                            <span class="teaser__label">Star us on GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a class="teaser" href="https://unglue-docs.readthedocs.io/" target="_blank">
+                            <div class="teaser__icon">
+                                <svg class="symbol symbol--book"><use class="symbol__use" xlink:href="dist/main.svg#book" /></svg>
+                            </div>
+                            <span class="teaser__label">Read the Documenation</span>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>The public API is sponsored by <a href="https://zephir.ch" target="_blank">Zephir</a>.</p>
+    </div>
+    <script type="text/javascript" src="dist/main.js"></script>
+</body>
 </html>
